@@ -178,14 +178,14 @@ void AP_Motors6DOF::setup_motors(motor_frame_class frame_class, motor_frame_type
 
     case SUB_FRAME_CUSTOM:
         _frame_class_string = "Custom";
-        add_motor_raw_6dof(AP_MOTORS_MOT_1,    -(std::sqrt(2)/std::sqrt(3)),  (std::sqrt(2)/std::sqrt(3)),   -(std::sqrt(2)/std::sqrt(3)),     -(std::sqrt(2)/std::sqrt(3)),    0,    (std::sqrt(2)/std::sqrt(3)), 1);
-        add_motor_raw_6dof(AP_MOTORS_MOT_2,    -(std::sqrt(2)/std::sqrt(3)),  (std::sqrt(2)/std::sqrt(3)),    (std::sqrt(2)/std::sqrt(3)),   -(std::sqrt(2)/std::sqrt(3)),   0,    -(std::sqrt(2)/std::sqrt(3)),  2);
-        add_motor_raw_6dof(AP_MOTORS_MOT_3,    -1.0f,    -1.0f,    1.0f,   -1.0f,     -1.0f,   -1.0f,     3);
-        add_motor_raw_6dof(AP_MOTORS_MOT_4,    1.0f,   1.0f,      1.0f,  1.0f,     1.0f,   1.0f,      4);
-        add_motor_raw_6dof(AP_MOTORS_MOT_5,    1.0f,   -1.0f,     -1.0f,     -1.0f,    -1.0f,   1.0f,     5);
-        add_motor_raw_6dof(AP_MOTORS_MOT_6,    -1.0f,    1.0f,     -1.0f,  1.0f,      -1.0f,  1.0f,     6);
-        add_motor_raw_6dof(AP_MOTORS_MOT_7,    (std::sqrt(2)/std::sqrt(3)),   (std::sqrt(2)/std::sqrt(3)),   (std::sqrt(2)/std::sqrt(3)),    -(std::sqrt(2)/std::sqrt(3)),    0,    -(std::sqrt(2)/std::sqrt(3)),  7);
-        add_motor_raw_6dof(AP_MOTORS_MOT_8,    (std::sqrt(2)/std::sqrt(3)),  (std::sqrt(2)/std::sqrt(3)),  -(std::sqrt(2)/std::sqrt(3)),    -(std::sqrt(2)/std::sqrt(3)),    0,   (std::sqrt(2)/std::sqrt(3)),    8);
+        add_motor_raw_6dof(AP_MOTORS_MOT_1,     1.0f,          -1.0f,         -0.71f,          1.0f,               0,                  -1.0f,          1);
+        add_motor_raw_6dof(AP_MOTORS_MOT_2,     1.0f,          -1.0f,          0.71f,          1.0f,               0,                  1.0f,           2);
+        add_motor_raw_6dof(AP_MOTORS_MOT_3,     0.0,            1.0f,         -1.0f,            0,                 1.0f,               0,              3);
+        add_motor_raw_6dof(AP_MOTORS_MOT_4,     0.0,            1.0f,         1.0f,             0,                 -1.0f,              0,              4);
+        add_motor_raw_6dof(AP_MOTORS_MOT_5,     0.0,            1.0f,         1.0f,             0,                 1.0f,               0,              5);
+        add_motor_raw_6dof(AP_MOTORS_MOT_6,     0.0,            1.0f,         -1.0f,            0,                 -1.0f,              0,              6);
+        add_motor_raw_6dof(AP_MOTORS_MOT_7,     -1.0f,         -1.0f,         0.71f,           1.0f,               0,                  1.0f,           7);
+        add_motor_raw_6dof(AP_MOTORS_MOT_8,     -1.0f,         -1.0f,         -0.71f,          1.0f,               0,                  -1.0f,          8);
         break;
 
 
